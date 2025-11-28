@@ -49,6 +49,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <style>
+        #myVideo {
+            max-width: 100%;
+            max-height: 400px;
+        }
+        
+        span {
+            color: #0000008f !important;
+            display: inline-block !important;
+        }
+        
+        li {
+            font-size: 1.5rem !important;
+        }
+        
+        .progress-section li {
+            font-size: unset;
+            font-size: 1rem !important;
+        }
+        
+        .footer-container li {
+            font-size: 1rem !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -72,9 +96,7 @@
                 <div class="navlist">
                     <ul>
                         <li><a class='link-active' href='index.html'>Home</a></li>
-                        <li>
-                            <a href='about-us.html'>About Us</a>
-                        </li>
+
                         <li><a href='book-frank.html'>Book Frank</a></li>
 
                         <!-- Therapy -->
@@ -127,7 +149,15 @@
                         </li>
 
                         <li><a href='ketamine-blog.html'>Blog</a></li>
-                        <li><a href='contact.html'>Contact</a></li>
+                        <li class="dropdown">
+                            <a>Contact ▾</a>
+                            <ul class="submenu">
+                                <li class="dropdown-sub">
+                                    <li><a href='contact.html'>Contact Frank</a></li>
+                                    <li><a href='about-us.html'>About Us</a></li>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -140,14 +170,36 @@
         <h1> At-Home Ketamine Therapy</h1>
 
         <div class="container blogs-para">
+            <div class="container hero-video-container">
 
-            <div class="elementor-widget-container">
+                <div class="video-container">
+                    <video id="myVideo" src="assets/video/Book 1 video 1080p_30fps.mp4"></video>
+
+                    <!-- Play/Pause Button -->
+                    <button id="playPause" class="play-pause-btn">
+                        <!-- Play Icon -->
+                        <svg id="playIcon" viewBox="0 0 36 36">
+                            <path d="M 12,26 18.5,22 18.5,14 12,10 z M 18.5,22 25,18 25,18 18.5,14 z"></path>
+                        </svg>
+                        <!-- Pause Icon (hidden initially) -->
+                        <svg id="pauseIcon" viewBox="0 0 36 36" style="display: none;">
+                            <path d="M 12,26 16,26 16,10 12,10 z M 21,26 25,26 25,10 21,10 z"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Progress Bar -->
+                    <input type="range" id="rangeprogressBar" value="0" min="0" max="100" step="0.1">
+                </div>
+
+            </div>
+
+            <div class="elementor-widget-container ">
                 <p>The Gentle Path to Healing with Oral Treatment Mental health care is evolving, and one of the most promising new frontiers is at-home ketamine therapy. Originally used as an anesthetic, ketamine has gained attention in recent years for
                     its ability to lift depression, ease anxiety, and help patients process trauma when other treatments have failed. With oral tablets or lozenges prescribed and monitored by licensed clinicians, patients can now experience the benefits
                     of ketamine therapy safely from the comfort of home.</p>
                 <h3>What Is At-Home Ketamine Therapy?</h3>
-                <p>t-home ketamine therapy involves taking a low dose of ketamine—usually in tablet, capsule, or dissolvable lozenge form—under medical supervision, but outside a clinic setting. The process typically includes a telehealth consultation, a
-                    home delivery of medication, and ongoing virtual support from qualified providers.</p>
+                <p>At-home ketamine therapy involves taking a low dose of ketamine—usually in tablet, capsule, or dissolvable lozenge form—under medical supervision, but outside a clinic setting. The process typically includes a telehealth consultation,
+                    a home delivery of medication, and ongoing virtual support from qualified providers.</p>
                 <p>Unlike IV or intranasal ketamine, which are administered in clinics, the oral route allows for a gentler, more gradual onset of effects. This makes it appealing for people who want a private, familiar environment while still receiving
                     professional guidance.</p>
                 <h3>How It Works</h3>
@@ -221,8 +273,8 @@
 
 
 
-            <a class='main-btn' href='contact.html'>
-                <button class="book-now-btn">BOOK FRANK TO ENCOURAGE <br> AND ENTERTAIN YOUR GROUP</button>
+            <a class='main-btn' href='https://calendly.com/ketaminecoach/talks?month=2025-11'>
+                <button class="book-now-btn ">BOOK FRANK TO ENCOURAGE <br> AND ENTERTAIN YOUR GROUP</button>
             </a>
         </div>
 
@@ -231,10 +283,10 @@
 
     <!-- footer section start -->
 
-    <div class="footer-container">
-        <div class="container">
-            <div class="footer-wrapper">
-                <div class="footer-items">
+    <div class="footer-container ">
+        <div class="container ">
+            <div class="footer-wrapper ">
+                <div class="footer-items ">
                     <div>
                         <h2>Mental</h2>
                         <span></span>
@@ -249,20 +301,20 @@
                     </ul>
                 </div>
 
-                <div class="footer-items">
+                <div class="footer-items ">
                     <div>
                         <h2>Physical</h2>
                         <span></span>
                     </div>
                     <ul>
                         <li><a href='ketamine-pain.html'>Chronic Pain</a></li>
-                        <h2 style="margin-top: 12px;">Addiction</h2>
+                        <h2 style="margin-top: 12px; ">Addiction</h2>
                         <span></span>
                         <li><a href='substance-abuse.html'>Ketamine for Addiction </a></li>
                     </ul>
                 </div>
 
-                <div class="footer-items">
+                <div class="footer-items ">
                     <div>
                         <h2>Ketamine Therapy</h2>
                         <span></span>
@@ -270,17 +322,18 @@
                     <ul>
                         <li><a href='ketamine-infusion.html'>Ketamine Infusion</a></li>
                         <li><a href='ketamine-nasal-spray.html'>Ketamine Nasal Spray</a></li>
+                        <li><a href='oral-at-home.html'>Oral/At-Home </a></li>
                     </ul>
                 </div>
 
-                <div class="footer-items">
+                <div class="footer-items ">
                     <div>
                         <h2>Quick Links</h2>
                         <span></span>
                     </div>
                     <ul>
                         <li><a href='ketamine-blog.html'>Ketamine Blog</a></li>
-                        <li><a href='book-frank.html'>About find ketamine</a></li>
+                        <li><a href='book-frank.html'>About Find Ketamine</a></li>
                         <li><a href='contact.html'>Contact Us</a></li>
                         <li><a href='privacy-policy.html'>Privacy Policy</a></li>
                         <li><a href='terms-of-service.html'>Terms of Service</a></li>
@@ -291,9 +344,9 @@
 
             </div>
 
-            <div class="footer-copywrite">
+            <div class="footer-copywrite ">
                 <p>This website is for informational purposes only and does not replace professional medical advice. Always consult a licensed healthcare provider for concerns about your health. </p>
-                <div class="footer-bottom">
+                <div class="footer-bottom ">
                     <p>© 2023-2025 Next Gen Medical, LLC</p>
                 </div>
 
@@ -302,9 +355,9 @@
 
     </div>
 
-    <button class="scroll-to-top">⬆</button>
+    <button class="scroll-to-top ">⬆</button>
 
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js "></script>
 
 
 </body>

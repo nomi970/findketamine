@@ -49,6 +49,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <style>
+        span {
+            color: #0000008f !important;
+            display: inline-block !important;
+        }
+        
+        li {
+            font-size: 1.5rem !important;
+        }
+        
+        .progress-section li {
+            font-size: unset;
+            font-size: 1rem !important;
+        }
+        
+        .footer-container li {
+            font-size: 1rem !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -73,9 +92,7 @@
                 <div class="navlist">
                     <ul>
                         <li><a class='link-active' href='index.html'>Home</a></li>
-                        <li>
-                            <a href='about-us.html'>About Us</a>
-                        </li>
+
                         <li><a href='book-frank.html'>Book Frank</a></li>
 
                         <!-- Therapy -->
@@ -128,7 +145,15 @@
                         </li>
 
                         <li><a href='ketamine-blog.html'>Blog</a></li>
-                        <li><a href='contact.html'>Contact</a></li>
+                        <li class="dropdown">
+                            <a>Contact ▾</a>
+                            <ul class="submenu">
+                                <li class="dropdown-sub">
+                                    <li><a href='contact.html'>Contact Frank</a></li>
+                                    <li><a href='about-us.html'>About Us</a></li>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -139,7 +164,7 @@
 
 
     <div class="hero-container">
-        <img src="assets/imgs/Cookies-policy.jpg" alt="hero-pic" style="object-fit: contain;">
+        <img src="https://www.privacypolicies.com/public/uploads/2021/09/cookie-consent-faq.jpg" alt="hero-pic" style="object-fit: contain;">
         <h1> Cookie Policy and Consent</h1>
 
         <div class="container blogs-para">
@@ -159,7 +184,7 @@
 
             <p>We use both session and persistent Cookies for the purposes set out below:</p>
 
-            <li> <span style="color: #ff0000;">*</span> Necessary / Essential Cookies</li>
+            <li>Necessary / Essential Cookies</li>
 
             <li>Type: Session Cookies</li>
 
@@ -168,14 +193,14 @@
             <p>Purpose: These Cookies are essential to provide You with services available through the Website and to enable You to use some of its features. They help to authenticate users and prevent fraudulent use of user accounts. Without these Cookies,
                 the services that You have asked for cannot be provided, and We only use these Cookies to provide You with those services.</p>
 
-            <li> <span style="color: #ff0000;">*</span> Cookies Policy / Notice Acceptance Cookies</li>
+            <li> Cookies Policy / Notice Acceptance Cookies</li>
             <li>Type: Persistent Cookies</li>
 
             <li>Administered by: Us</li>
 
             <p>Purpose: These Cookies identify if users have accepted the use of cookies on the Website.</p>
 
-            <li> <span style="color: #ff0000;">*</span> Functionality Cookies</li>
+            <li>Functionality Cookies</li>
 
             <li>Type: Persistent Cookies</li>
 
@@ -184,7 +209,7 @@
             <p>Purpose: These Cookies allow us to remember choices You make when You use the Website, such as remembering your login details or language preference. The purpose of these Cookies is to provide You with a more personal experience and to avoid
                 You having to re-enter your preferences every time You use the Website.</p>
 
-            <li> <span style="color: #ff0000;">*</span> Tracking and Performance Cookies</li>
+            <li>Tracking and Performance Cookies</li>
             <li>Type: Persistent Cookies</li>
 
             <li>Administered by: Third-Parties</li>
@@ -228,7 +253,7 @@
                         <li><a href='ketamine-pain.html'>Chronic Pain</a></li>
                         <h2 style="margin-top: 12px;">Addiction</h2>
                         <span></span>
-                        <li><a href='substance-abuse.html'>Ketamine for Addiction </a></li>
+                        <li style="margin-top: 20px;"><a href='substance-abuse.html'>Ketamine for Addiction </a></li>
                     </ul>
                 </div>
 
@@ -240,6 +265,7 @@
                     <ul>
                         <li><a href='ketamine-infusion.html'>Ketamine Infusion</a></li>
                         <li><a href='ketamine-nasal-spray.html'>Ketamine Nasal Spray</a></li>
+                        <li><a href='oral-at-home.html'>Oral/At-Home </a></li>
                     </ul>
                 </div>
 
@@ -250,7 +276,7 @@
                     </div>
                     <ul>
                         <li><a href='ketamine-blog.html'>Ketamine Blog</a></li>
-                        <li><a href='book-frank.html'>About find ketamine</a></li>
+                        <li><a href='book-frank.html'>About Find Ketamine</a></li>
                         <li><a href='contact.html'>Contact Us</a></li>
                         <li><a href='privacy-policy.html'>Privacy Policy</a></li>
                         <li><a href='terms-of-service.html'>Terms of Service</a></li>

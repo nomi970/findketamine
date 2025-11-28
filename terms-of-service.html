@@ -49,6 +49,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <style>
+        span {
+            color: #0000008f !important;
+            display: inline-block !important;
+        }
+        
+        li {
+            font-size: 1.5rem !important;
+        }
+        
+        .progress-section li {
+            font-size: unset;
+            font-size: 1rem !important;
+        }
+        
+        .footer-container li {
+            font-size: 1rem !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -73,9 +92,7 @@
                 <div class="navlist">
                     <ul>
                         <li><a class='link-active' href='index.html'>Home</a></li>
-                        <li>
-                            <a href='about-us.html'>About Us</a>
-                        </li>
+
                         <li><a href='book-frank.html'>Book Frank</a></li>
 
                         <!-- Therapy -->
@@ -128,7 +145,15 @@
                         </li>
 
                         <li><a href='ketamine-blog.html'>Blog</a></li>
-                        <li><a href='contact.html'>Contact</a></li>
+                        <li class="dropdown">
+                            <a>Contact ▾</a>
+                            <ul class="submenu">
+                                <li class="dropdown-sub">
+                                    <li><a href='contact.html'>Contact Frank</a></li>
+                                    <li><a href='about-us.html'>About Us</a></li>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -555,6 +580,7 @@
                     <ul>
                         <li><a href='ketamine-infusion.html'>Ketamine Infusion</a></li>
                         <li><a href='ketamine-nasal-spray.html'>Ketamine Nasal Spray</a></li>
+                        <li><a href='oral-at-home.html'>Oral/At-Home </a></li>
                     </ul>
                 </div>
 
@@ -565,7 +591,7 @@
                     </div>
                     <ul>
                         <li><a href='ketamine-blog.html'>Ketamine Blog</a></li>
-                        <li><a href='book-frank.html'>About find ketamine</a></li>
+                        <li><a href='book-frank.html'>About Find Ketamine</a></li>
                         <li><a href='contact.html'>Contact Us</a></li>
                         <li><a href='privacy-policy.html'>Privacy Policy</a></li>
                         <li><a href='terms-of-service.html'>Terms of Service</a></li>
